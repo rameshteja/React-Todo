@@ -15,20 +15,12 @@ export default function TodoInput(props) {
       />
       <button 
         onClick={() => {
-          if (!todoValue.trim()) {
-            toast.error('Please enter a Todo!', { position: "top-center", autoClose: 2000 });
-            return;
-          }
           handleAddTodos(todoValue);
           setTodoValue('');
-          toast.success('Todo added successfully!', { position: "top-center", autoClose: 2000 });
         }}
       >
         Add
       </button>
-      
-      {/* Toast Container (Required for notifications to work) */}
-      <ToastContainer />
     </header>
   );
 }
