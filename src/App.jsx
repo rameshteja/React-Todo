@@ -47,6 +47,7 @@ function App() {
 
   return (
     <>
+      <h1 className="todo-heading">React Todo APP</h1>
       <TodoInput handleAddTodos={handleAddTodos} todoValue={todoValue} setTodoValue={setTodoValue} />
       <TodoList todos={todos} handleDeleteTodos={handleDeleteTodos} handleEditTodos={handleEditTodos}/>
     </>
